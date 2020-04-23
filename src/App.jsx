@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Redirect,
+  // Redirect,
 } from "react-router-dom";
 
 import "./App";
@@ -15,7 +15,7 @@ import ContactDetails from "./pages/contact-details";
 import Charts from "./pages/charts";
 import EditPage from "./pages/edit-page";
 import LoginPage from "./pages/login-Page";
-import userService from "./services/user.service";
+// import userService from "./services/user.service";
 
 const history = createBrowserHistory();
 
