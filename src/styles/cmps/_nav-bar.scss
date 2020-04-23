@@ -1,0 +1,24 @@
+.nav-bar-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 300px;
+  padding: 10px;
+  box-shadow: 0 -4px 8px #000;
+  background-color: #000;
+  a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: roboSlab, serif;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .active {
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: underline;
+  }
+}

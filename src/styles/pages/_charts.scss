@@ -1,0 +1,11 @@
+.chart-page-container {
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .chart-page-title {
+    font-size: 30px;
+    font-family: roboSlab, serif;
+  }
+}

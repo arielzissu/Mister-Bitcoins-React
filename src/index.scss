@@ -1,0 +1,35 @@
+/* pages */
+@import "./styles/pages/contact-page";
+@import "./styles/pages/home-page";
+@import "./styles/pages/contact-details";
+@import "./styles/pages/charts";
+@import "./styles/pages/edit-page";
+@import "./styles/pages/login-page";
+
+/* cmps: */
+@import "./styles/cmps/contact-list";
+@import "./styles/cmps/contact-preview";
+@import "./styles/cmps/contact-filter";
+@import "./styles/cmps/nav-bar";
+
+/* Basics: */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #eee;
+  background-color: #393939;
+  font-family: cursive, sans-serif;
+}
+
+@font-face {
+  font-family: roboSlab;
+  src: url(./imgs/fonts/RobotoSlab-Bold.ttf);
+}
+
+/* Helper: */
+.btn {
+  cursor: pointer;
+}

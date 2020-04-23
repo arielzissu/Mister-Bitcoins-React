@@ -1,0 +1,16 @@
+.Contact-filter-container {
+  display: flex;
+  justify-content: center;
+  input {
+    height: 40px;
+    width: 17%;
+    min-width: 170px;
+    border-radius: 50px;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    outline: none;
+  }
+}

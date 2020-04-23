@@ -1,0 +1,40 @@
+.edit-page-main-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 5% 0 5%;
+}
+.edit-page-img {
+  margin: 10px;
+  width: 50px;
+}
+.edit-page-container {
+  padding: 10px 50px;
+  text-align: center;
+  h2 {
+    font-size: 30px;
+    font-family: roboSlab, serif;
+  }
+  .edit-page-form-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input {
+      width: 30%;
+      min-width: 260px;
+      height: 40px;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+    button {
+      width: 15%;
+      height: 35px;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+    label {
+      font-size: 20px;
+    }
+  }
+}
