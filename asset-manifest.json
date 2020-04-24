@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Mister-Bitcoins-React/static/css/main.b5f5d158.chunk.css",
-    "main.js": "/Mister-Bitcoins-React/static/js/main.a1166082.chunk.js",
-    "main.js.map": "/Mister-Bitcoins-React/static/js/main.a1166082.chunk.js.map",
+    "main.css": "/Mister-Bitcoins-React/static/css/main.92a5d538.chunk.css",
+    "main.js": "/Mister-Bitcoins-React/static/js/main.817c6f94.chunk.js",
+    "main.js.map": "/Mister-Bitcoins-React/static/js/main.817c6f94.chunk.js.map",
     "runtime-main.js": "/Mister-Bitcoins-React/static/js/runtime-main.a74a4b73.js",
     "runtime-main.js.map": "/Mister-Bitcoins-React/static/js/runtime-main.a74a4b73.js.map",
-    "static/js/2.a1bafac6.chunk.js": "/Mister-Bitcoins-React/static/js/2.a1bafac6.chunk.js",
-    "static/js/2.a1bafac6.chunk.js.map": "/Mister-Bitcoins-React/static/js/2.a1bafac6.chunk.js.map",
+    "static/js/2.bd4e14c4.chunk.js": "/Mister-Bitcoins-React/static/js/2.bd4e14c4.chunk.js",
+    "static/js/2.bd4e14c4.chunk.js.map": "/Mister-Bitcoins-React/static/js/2.bd4e14c4.chunk.js.map",
     "index.html": "/Mister-Bitcoins-React/index.html",
-    "precache-manifest.b7ca2f0ecf208603392822eb4cfec5d6.js": "/Mister-Bitcoins-React/precache-manifest.b7ca2f0ecf208603392822eb4cfec5d6.js",
+    "precache-manifest.6c4485834a5f2bb8587bd25f5c8cdd03.js": "/Mister-Bitcoins-React/precache-manifest.6c4485834a5f2bb8587bd25f5c8cdd03.js",
     "service-worker.js": "/Mister-Bitcoins-React/service-worker.js",
-    "static/css/main.b5f5d158.chunk.css.map": "/Mister-Bitcoins-React/static/css/main.b5f5d158.chunk.css.map",
-    "static/js/2.a1bafac6.chunk.js.LICENSE.txt": "/Mister-Bitcoins-React/static/js/2.a1bafac6.chunk.js.LICENSE.txt",
+    "static/css/main.92a5d538.chunk.css.map": "/Mister-Bitcoins-React/static/css/main.92a5d538.chunk.css.map",
+    "static/js/2.bd4e14c4.chunk.js.LICENSE.txt": "/Mister-Bitcoins-React/static/js/2.bd4e14c4.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/Mister-Bitcoins-React/static/media/RobotoSlab-Bold.5b025a51.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.a74a4b73.js",
-    "static/js/2.a1bafac6.chunk.js",
-    "static/css/main.b5f5d158.chunk.css",
-    "static/js/main.a1166082.chunk.js"
+    "static/js/2.bd4e14c4.chunk.js",
+    "static/css/main.92a5d538.chunk.css",
+    "static/js/main.817c6f94.chunk.js"
   ]
 }
