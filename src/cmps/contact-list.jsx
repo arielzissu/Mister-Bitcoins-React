@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ContactPreview from "./contact-preveiw";
 
-export default (props) => {
+export function ContactList(props) {
   const { contacts } = props;
 
   return (
@@ -25,4 +25,5 @@ export default (props) => {
       </ul>
     </section>
   );
-};
+}
+export default ContactList;

@@ -11,6 +11,9 @@
 @import "./styles/cmps/contact-preview";
 @import "./styles/cmps/contact-filter";
 @import "./styles/cmps/nav-bar";
+@import "./styles/cmps/footer";
+@import "./styles/cmps/move-list";
+@import "./styles/cmps/transfer-fund";
 
 /* Basics: */
 * {
@@ -26,7 +29,7 @@ body {
 
 @font-face {
   font-family: roboSlab;
-  src: url(./imgs/fonts/RobotoSlab-Bold.ttf);
+  src: url(./assets/fonts/RobotoSlab-Bold.ttf);
 }
 
 /* Helper: */

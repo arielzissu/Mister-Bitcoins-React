@@ -1,0 +1,72 @@
+.move-list-container {
+  border: 2px black solid;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 300px;
+  max-width: 605px;
+  background-color: #3e4a52;
+  color: #eee;
+  margin: 30px auto 40px auto;
+  width: 60%;
+  text-align: start;
+  .move-list-title {
+    font-family: roboSlab, sans-serif;
+    margin: -5px 0 10px 0;
+    font-size: 27px;
+  }
+  .move-list-main-container {
+    .move-list-main {
+      .move-list-to {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 800;
+      }
+      .move-list-to > * {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .move-list-at {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 800;
+      }
+      .move-list-at > * {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .move-list-amount {
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 24px;
+        font-weight: 800;
+      }
+      .move-list-amount > * {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+  .move-list-title-p {
+    font-size: 16px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .move-list-container {
+    width: 90%;
+    min-width: 250px;
+    .move-list-main-container {
+      .move-list-main {
+        .move-list-at {
+          font-size: 16px;
+        }
+        .move-list-amount {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

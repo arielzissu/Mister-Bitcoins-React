@@ -1,26 +1,49 @@
 import React, { Component } from "react";
-import contactService from "../services/contact.service";
+import { connect } from "react-redux";
 
-export default class EditPage extends Component {
+import {
+  loadContact,
+  clearContact,
+  saveContact,
+  deleteContact,
+} from "../store/actions/contactActions";
+import { ReactComponent as BackImg } from "../assets/svg/back.svg";
+import { ReactComponent as DeleteImg } from "../assets/svg/delete.svg";
+
+export class EditPage extends Component {
   state = {
-    contact: {
-      name: "",
-      email: "",
-      phone: "",
-    },
+    contact: null,
   };
 
-  async componentDidMount() {
+  componentDidMount() {
+    this.loadContact();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.match.params.id !== this.props.match.params.id) {
+      this.loadContact();
+    }
+  }
+
+  componentWillUnmount() {
+    this.props.clearContact();
+  }
+
+  async loadContact() {
     const { id } = this.props.match.params;
-    if (id) {
-      const contact = await contactService.getContactById(id);
-      this.setState({ contact });
+    try {
+      await this.props.loadContact(id);
+      const { currContact } = this.props;
+      this.setState({ contact: { ...currContact } });
+    } catch (err) {
+      console.log(err);
+      this.props.history.push("/contact");
     }
   }
 
   onSaveHandle = (el) => {
     el.preventDefault();
-    contactService.saveContact(this.state.contact);
+    this.props.saveContact(this.state.contact);
     this.props.history.push("/contact");
   };
 
@@ -41,27 +64,26 @@ export default class EditPage extends Component {
   };
 
   onDeleteHandle = (ev) => {
-    contactService.deleteContact(this.state.contact._id);
+    this.props.deleteContact(this.state.contact._id);
     this.props.history.push("/contact");
   };
 
   render() {
     const { contact } = this.state;
+    if (!contact) return false;
     return (
-      <section>
+      <section className="edit-page-main-container">
         <div className="edit-page-main-imgs">
-          <img
+          <BackImg
             className="edit-page-img btn"
-            src="../assets/svg/back.svg"
             onClick={this.onGoBackClickHandler}
-            alt="Go Back"
+            title="Back"
           />
           {contact._id ? (
-            <img
+            <DeleteImg
               className="edit-page-img btn"
-              src="../assets/svg/delete.svg"
               onClick={this.onDeleteHandle}
-              alt="Delete Contact"
+              title="Delete"
             />
           ) : (
             ""
@@ -134,3 +156,16 @@ export default class EditPage extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  currContact: state.contact.currContact,
+});
+
+const mapDispatchToProps = {
+  loadContact,
+  clearContact,
+  saveContact,
+  deleteContact,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(EditPage);

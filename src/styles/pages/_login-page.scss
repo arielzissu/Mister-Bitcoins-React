@@ -1,7 +1,8 @@
 .login-page-container {
   text-align: center;
   padding: 60px 30px;
-  img {
+  min-height: 86vh;
+  .img {
     width: 200px;
   }
   input {
@@ -16,13 +17,13 @@
   .login-page-btn {
     border: 2px black solid;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 20px;
     font-weight: 700;
     font-size: 18px;
     transition: all 0.5s;
     background-color: #3f507e;
     color: lightgoldenrodyellow;
-    width: 10%;
+    width: min-content;
     margin: 10px auto;
     &:hover {
       color: white;

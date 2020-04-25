@@ -1,40 +1,79 @@
-.edit-page-main-imgs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px 5% 0 5%;
-}
-.edit-page-img {
-  margin: 10px;
-  width: 50px;
-}
-.edit-page-container {
-  padding: 10px 50px;
-  text-align: center;
-  h2 {
-    font-size: 30px;
-    font-family: roboSlab, serif;
-  }
-  .edit-page-form-main {
+.edit-page-main-container {
+  min-height: 89vh;
+  .edit-page-main-imgs {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    input {
-      width: 30%;
-      min-width: 260px;
-      height: 40px;
-      margin: 10px auto;
-      border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 5% 0 5%;
+  }
+  .edit-page-img {
+    margin: 10px;
+    width: 50px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
     }
-    button {
-      width: 15%;
-      height: 35px;
-      margin: 10px auto;
-      border-radius: 10px;
+  }
+  .edit-page-container {
+    padding: 10px 50px;
+    text-align: center;
+    h2 {
+      font-size: 35px;
+      font-family: roboSlab, serif;
+      margin: 0;
+      margin-bottom: 15px;
     }
-    label {
-      font-size: 20px;
+    .edit-page-form-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      input {
+        width: 30%;
+        min-width: 260px;
+        height: 40px;
+        margin: 10px auto;
+        border-radius: 10px;
+      }
+      button {
+        background-color: #3f507e;
+        color: lightgoldenrodyellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 2px black solid;
+        border-radius: 10px;
+        margin: 15px auto 30px auto;
+        height: 40px;
+        width: 150px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        transition: all 0.5s;
+        &:hover {
+          cursor: pointer;
+          color: white;
+          background-color: black;
+        }
+      }
+      label {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .edit-page-main-container {
+    .edit-page-main-imgs {
+      padding: 0 5px;
+    }
+    .edit-page-img {
+      width: 40px;
+    }
+    .edit-page-container {
+      padding: 10px 20px;
     }
   }
 }

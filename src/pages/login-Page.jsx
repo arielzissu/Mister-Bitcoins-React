@@ -1,24 +1,30 @@
 import React, { Component } from "react";
-import userService from "../services/user.service";
+import { Redirect } from "react-router-dom";
+import { connect } from "react-redux";
 
-export default class LoginPage extends Component {
+import { signup } from "../store/actions/UserActions";
+import { ReactComponent as CoinImg } from "../assets/svg/coin1.svg";
+
+export class LoginPage extends Component {
   state = {
-    input: null,
+    username: "",
   };
 
-  changeHandle = (el) => {
-    this.setState({ input: el.target.value });
+  changeHandle = (ev) => {
+    this.setState({ username: ev.target.value });
   };
 
   loginHandle = () => {
-    userService.addUser(this.state.input);
+    this.props.signup(this.state.username);
+    this.setState({ username: "" });
     this.props.history.push("/");
   };
 
   render() {
+    if (this.props.loggedinUser) return <Redirect to="/" />;
     return (
       <section className="login-page-container">
-        <img src="./assets/svg/coin1.svg" alt="Welcome home!" />
+        <CoinImg className="img" title="Coin" />
         <h2>Please enter your name:</h2>
         <input
           type="text"
@@ -32,3 +38,13 @@ export default class LoginPage extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  loggedinUser: state.user.loggedinUser,
+});
+
+const mapDispatchToProps = {
+  signup,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);

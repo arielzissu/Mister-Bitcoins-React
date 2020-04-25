@@ -1,24 +1,25 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import { connect } from "react-redux";
+
+import { loadContacts } from "../store/actions/contactActions";
+
 import ContactList from "../cmps/contact-list";
 import ContactFilter from "../cmps/contact-filter";
-import contactService from "../services/contact.service";
-import { NavLink } from "react-router-dom";
+import { ReactComponent as PlusImg } from "../assets/svg/plus.svg";
 
-export default class ContactPage extends Component {
+export class ContactPage extends Component {
   state = {
     contacts: [],
-    filterBy: {
-      term: "",
-    },
+    filterBy: { term: "" },
   };
 
-  async componentDidMount() {
+  componentDidMount() {
     this.loadContacts();
   }
 
-  loadContacts = async () => {
-    const contacts = await contactService.getContacts(this.state.filterBy);
-    this.setState({ contacts });
+  loadContacts = () => {
+    this.props.loadContacts(this.state.filterBy);
   };
 
   onFilterHandler = (filterBy) => {
@@ -32,23 +33,29 @@ export default class ContactPage extends Component {
     }, this.loadContacts);
   };
 
-  // addHandle = (el) => {
-  //   el.histoty.push("/edit");
-  // };
-
   render() {
+    const { contacts } = this.props;
+    const { filterBy } = this.state;
     return (
       <section className="contact-page-container">
         <h2 className="contact-page-title">Contact Page:</h2>
-        <ContactFilter
-          filterBy={this.state.filterBy}
-          onFilter={this.onFilterHandler}
-        />
-        <ContactList contacts={this.state.contacts} />
-        <NavLink to="/edit">
+        <ContactFilter filterBy={filterBy} onFilter={this.onFilterHandler} />
+        <ContactList contacts={contacts} />
+        <NavLink to="/contact/edit">
           <div className="contact-page-add-btn btn">+</div>
+          <PlusImg className="contact-page-add-btn btn" title="Plus" />
         </NavLink>
       </section>
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  contacts: state.contact.contacts,
+});
+
+const mapDispatchToProps = {
+  loadContacts,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactPage);

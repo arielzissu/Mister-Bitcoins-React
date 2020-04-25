@@ -1,8 +1,9 @@
 .chart-page-container {
-  padding: 10px 50px;
+  min-height: 86vh;
+  padding: 20px 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   .chart-page-title {
     font-size: 30px;

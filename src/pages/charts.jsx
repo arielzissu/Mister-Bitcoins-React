@@ -22,29 +22,16 @@ export default class Charts extends Component {
     const { values } = this.state;
     return (
       <section className="chart-page-container">
-        <h2 className="chart-page-title">
-          Average USD market price across major bitcoin exchanges
-        </h2>
         <Chart
-          width={"500px"}
-          height={"300px"}
+          width={"650px"}
+          height={"450px"}
           chartType="AreaChart"
           loader={<div>Loading Chart</div>}
-          data={
-            values
-              ? values
-              : [
-                  ["Date", "USD"],
-                  ["2019-11-03", 7286.36],
-                  ["2019-11-13", 6886.25],
-                  ["2019-11-23", 7486.15],
-                  ["2019-12-03", 6686.33],
-                ]
-          }
+          data={values ? values : null}
           options={{
-            title: "Company Performance",
-            hAxis: { title: "Year", titleTextStyle: { color: "#333" } },
-            vAxis: { minValue: 0 },
+            title: "Average USD market price across major bitcoin exchanges",
+            hAxis: { title: "Year", titleTextStyle: { color: "black" } },
+            vAxis: { title: "Dollars", minValue: 0 },
             chartArea: { width: "50%", height: "70%" },
           }}
         />

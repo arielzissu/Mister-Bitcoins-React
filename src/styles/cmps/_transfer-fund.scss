@@ -1,0 +1,132 @@
+.transfer-fund-container {
+  border: 2px black solid;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #3e4a52;
+  color: #eee;
+  margin: 10px auto 30px auto;
+  font-family: roboSlab, sans-serif;
+  width: 60%;
+  .transfer-fund-title {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 35px;
+  }
+  .transfer-fund-main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 20px;
+    .transfer-amount {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+    .transfer-fund-input {
+      border: unset;
+      border-bottom: black 2px solid;
+      font-size: 30px;
+      width: 150px;
+      text-align: center;
+      overflow: visible;
+      background-color: #3e4a52;
+      color: #eee;
+      &:focus {
+        outline: none;
+      }
+      &[type="number"]::-webkit-inner-spin-button,
+      &[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &::placeholder {
+        font-size: 20px;
+        font-family: roboSlab, sans-serif;
+      }
+    }
+    .transfer-fund-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      border: 2px black solid;
+      border-radius: 10px;
+      padding: 10px;
+      height: 40px;
+      font-size: 19px;
+      font-weight: 700;
+      transition: all 0.5s;
+      background-color: #3f507e;
+      color: lightgoldenrodyellow;
+      transition: all 0.5s;
+      &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+  .transfer-fund-main > * {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .transfer-fund-container {
+    padding: 20px;
+    .transfer-fund-title {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .transfer-fund-main {
+      .transfer-amount {
+        font-size: 25px;
+      }
+      .transfer-fund-input {
+        margin-right: 7px;
+        width: 130px;
+        &::placeholder {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+      .transfer-fund-btn {
+        font-size: 15px;
+        font-weight: 600;
+        box-sizing: border-box;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .transfer-fund-container {
+    padding: 10px;
+    margin: 0px auto 0px auto;
+    width: 90%;
+    .transfer-fund-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .transfer-fund-main {
+      .transfer-amount {
+        font-size: 16px;
+      }
+      .transfer-fund-input {
+        font-size: 16px;
+        width: 90px;
+        &::placeholder {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+      .transfer-fund-btn {
+        font-size: 15px;
+        font-weight: 600;
+        width: 30%;
+        box-sizing: border-box;
+        padding: 5px;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 .contact-details-container {
+  min-height: 89vh;
   padding: 10px 30px;
   display: flex;
   flex-direction: column;
@@ -13,14 +14,18 @@
   .contact-details-img {
     margin: 10px;
     width: 50px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .contact-details-container-main {
     margin: 20px;
-    width: 100%;
+    width: 96%;
     text-align: center;
     img {
       width: 40%;
-      max-width: 500px;
+      max-width: 450px;
       min-width: 250px;
     }
     h2 {
@@ -36,6 +41,12 @@
 
 @media (max-width: 1240px) {
   .contact-details-container {
+    .contact-details-img {
+      width: 40px;
+    }
+    .contact-details-main-imgs {
+      padding: 0 5px;
+    }
     .contact-details-container-main {
       h2 {
         font-size: 35px;
@@ -49,7 +60,9 @@
 
 @media (max-width: 860px) {
   .contact-details-container {
+    padding: 0;
     .contact-details-container-main {
+      width: 88%;
       h2 {
         font-size: 32px;
       }

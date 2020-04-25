@@ -1,33 +1,39 @@
 const USER_KEY = 'USER';
 
 var gUser = JSON.parse(localStorage.getItem(USER_KEY));
-if(!gUser){
-    gUser = {
-        name: '',
-        coins: 0,
-        moves:[{toId: '', to: "", at: Date.now(), amount: 1}]
-    } 
-}
 
 function getUser() {
-    return new Promise((resolve, reject) => { 
-        resolve(gUser);
-        gUser ? resolve(gUser) : reject('user not found!');
-    })
+    return JSON.parse(JSON.stringify(gUser));
 }
 
 function addUser(name){
-    const newUser = {
-      name,
-      coins: 100,
-      moves:[ ]
-    };
-    gUser = newUser;
-    localStorage.setItem(USER_KEY, JSON.stringify(gUser))
-  }
+  gUser = {
+    name,
+    coins: 100,
+    moves:[]
+  };
+  localStorage.setItem(USER_KEY, JSON.stringify(gUser))
+  return getUser();
+}
+
+function addMove(contact, amount){
+  amount = +amount;
+  gUser.moves.push({toId: contact._id, to: contact.name, at: Date.now(), amount});
+  gUser.coins = gUser.coins - amount;
+  localStorage.setItem(USER_KEY, JSON.stringify(gUser));
+  return getUser();
+}
+
+function logout() {
+  if (!gUser) return;
+  gUser = null;
+  localStorage.removeItem(USER_KEY);
+}
 
 export default {
     getUser,
-    addUser
+    addUser,
+    addMove,
+    logout
 }
 

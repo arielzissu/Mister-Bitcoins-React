@@ -1,0 +1,31 @@
+.footer-container {
+  background-color: black;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .footer-span1 {
+    font-size: 18px;
+    color: goldenrod;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    h2 {
+      font-size: 15px;
+      padding: 15px;
+    }
+    .footer-span1 {
+      font-size: 14px;
+    }
+    .footer-span2 {
+      display: none;
+    }
+  }
+}
