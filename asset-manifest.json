@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Mister-Bitcoins-React/static/css/main.2740e5e3.chunk.css",
-    "main.js": "/Mister-Bitcoins-React/static/js/main.b8424ece.chunk.js",
-    "main.js.map": "/Mister-Bitcoins-React/static/js/main.b8424ece.chunk.js.map",
+    "main.js": "/Mister-Bitcoins-React/static/js/main.b3f6c388.chunk.js",
+    "main.js.map": "/Mister-Bitcoins-React/static/js/main.b3f6c388.chunk.js.map",
     "runtime-main.js": "/Mister-Bitcoins-React/static/js/runtime-main.a74a4b73.js",
     "runtime-main.js.map": "/Mister-Bitcoins-React/static/js/runtime-main.a74a4b73.js.map",
-    "static/js/2.6c10127d.chunk.js": "/Mister-Bitcoins-React/static/js/2.6c10127d.chunk.js",
-    "static/js/2.6c10127d.chunk.js.map": "/Mister-Bitcoins-React/static/js/2.6c10127d.chunk.js.map",
+    "static/js/2.160c56f9.chunk.js": "/Mister-Bitcoins-React/static/js/2.160c56f9.chunk.js",
+    "static/js/2.160c56f9.chunk.js.map": "/Mister-Bitcoins-React/static/js/2.160c56f9.chunk.js.map",
     "index.html": "/Mister-Bitcoins-React/index.html",
-    "precache-manifest.2b219b86ec14d5899830110df45cbedc.js": "/Mister-Bitcoins-React/precache-manifest.2b219b86ec14d5899830110df45cbedc.js",
+    "precache-manifest.d53dc47305c6ec17cbaca32f0d363fa6.js": "/Mister-Bitcoins-React/precache-manifest.d53dc47305c6ec17cbaca32f0d363fa6.js",
     "service-worker.js": "/Mister-Bitcoins-React/service-worker.js",
     "static/css/main.2740e5e3.chunk.css.map": "/Mister-Bitcoins-React/static/css/main.2740e5e3.chunk.css.map",
-    "static/js/2.6c10127d.chunk.js.LICENSE.txt": "/Mister-Bitcoins-React/static/js/2.6c10127d.chunk.js.LICENSE.txt",
+    "static/js/2.160c56f9.chunk.js.LICENSE.txt": "/Mister-Bitcoins-React/static/js/2.160c56f9.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/Mister-Bitcoins-React/static/media/RobotoSlab-Bold.5b025a51.ttf",
     "static/media/back.a57f71a3.svg": "/Mister-Bitcoins-React/static/media/back.a57f71a3.svg",
     "static/media/bitcoin.1351d176.svg": "/Mister-Bitcoins-React/static/media/bitcoin.1351d176.svg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a74a4b73.js",
-    "static/js/2.6c10127d.chunk.js",
+    "static/js/2.160c56f9.chunk.js",
     "static/css/main.2740e5e3.chunk.css",
-    "static/js/main.b8424ece.chunk.js"
+    "static/js/main.b3f6c388.chunk.js"
   ]
 }
