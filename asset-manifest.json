@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Mister-Bitcoins-React/static/css/main.2740e5e3.chunk.css",
-    "main.js": "/Mister-Bitcoins-React/static/js/main.46f8f967.chunk.js",
-    "main.js.map": "/Mister-Bitcoins-React/static/js/main.46f8f967.chunk.js.map",
+    "main.js": "/Mister-Bitcoins-React/static/js/main.bc4e3d77.chunk.js",
+    "main.js.map": "/Mister-Bitcoins-React/static/js/main.bc4e3d77.chunk.js.map",
     "runtime-main.js": "/Mister-Bitcoins-React/static/js/runtime-main.a74a4b73.js",
     "runtime-main.js.map": "/Mister-Bitcoins-React/static/js/runtime-main.a74a4b73.js.map",
     "static/js/2.160c56f9.chunk.js": "/Mister-Bitcoins-React/static/js/2.160c56f9.chunk.js",
     "static/js/2.160c56f9.chunk.js.map": "/Mister-Bitcoins-React/static/js/2.160c56f9.chunk.js.map",
     "index.html": "/Mister-Bitcoins-React/index.html",
-    "precache-manifest.42beec3a92d1b653565c39c0a011bdfe.js": "/Mister-Bitcoins-React/precache-manifest.42beec3a92d1b653565c39c0a011bdfe.js",
+    "precache-manifest.49a487d2692e3319222fe09d9aa1a03e.js": "/Mister-Bitcoins-React/precache-manifest.49a487d2692e3319222fe09d9aa1a03e.js",
     "service-worker.js": "/Mister-Bitcoins-React/service-worker.js",
     "static/css/main.2740e5e3.chunk.css.map": "/Mister-Bitcoins-React/static/css/main.2740e5e3.chunk.css.map",
     "static/js/2.160c56f9.chunk.js.LICENSE.txt": "/Mister-Bitcoins-React/static/js/2.160c56f9.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.a74a4b73.js",
     "static/js/2.160c56f9.chunk.js",
     "static/css/main.2740e5e3.chunk.css",
-    "static/js/main.46f8f967.chunk.js"
+    "static/js/main.bc4e3d77.chunk.js"
   ]
 }
